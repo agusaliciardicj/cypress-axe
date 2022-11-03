@@ -1,0 +1,29 @@
+{
+  "name": "cypress-axe",
+  "version": "1.0.0",
+  "description": "Testing with cypress and axe",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/agusaliciardicj/cypress-axe.git"
+  },
+  "keywords": [
+    "cypress",
+    "axe"
+  ],
+  "author": "Darwoft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agusaliciardicj/cypress-axe/issues"
+  },
+  "homepage": "https://github.com/agusaliciardicj/cypress-axe#readme",
+  "dependencies": {
+    "cypress": "^10.11.0"
+  },
+  "devDependencies": {
+    "cypress-axe": "^1.0.0"
+  }
+}

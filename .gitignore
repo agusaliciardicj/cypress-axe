@@ -1,0 +1,5 @@
+# IDE config
+.vscode
+
+# npm
+node_modules
