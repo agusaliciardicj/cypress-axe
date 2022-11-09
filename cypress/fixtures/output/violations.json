@@ -1,0 +1,305 @@
+[
+  {
+    "id": "button-name",
+    "impact": "critical",
+    "tags": [
+      "cat.name-role-value",
+      "wcag2a",
+      "wcag412",
+      "section508",
+      "section508.22.a",
+      "ACT"
+    ],
+    "description": "Ensures buttons have discernible text",
+    "help": "Buttons must have discernible text",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.5/button-name?application=axeAPI",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "button-has-visible-text",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "critical",
+            "message": "Element does not have inner text that is visible to screen readers"
+          },
+          {
+            "id": "aria-label",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute does not exist or is empty"
+          },
+          {
+            "id": "aria-labelledby",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+          },
+          {
+            "id": "non-empty-title",
+            "data": {
+              "messageKey": "noAttr"
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "Element has no title attribute"
+          },
+          {
+            "id": "presentational-role",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "minor",
+            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "critical",
+        "html": "<button tacc=\"menu-button-menu\" type=\"button\" class=\"jsx-2811619846 menu-button\"><i tacc=\"mainMenu-icon\" class=\"jsx-2811619846 menu-button-ico ico-menu\"></i></button>",
+        "target": [
+          ".menu-button"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+      },
+      {
+        "any": [
+          {
+            "id": "button-has-visible-text",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "critical",
+            "message": "Element does not have inner text that is visible to screen readers"
+          },
+          {
+            "id": "aria-label",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute does not exist or is empty"
+          },
+          {
+            "id": "aria-labelledby",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
+          },
+          {
+            "id": "non-empty-title",
+            "data": {
+              "messageKey": "noAttr"
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "Element has no title attribute"
+          },
+          {
+            "id": "presentational-role",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "minor",
+            "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "critical",
+        "html": "<button type=\"button\" tacc=\"liteModeSwitch-button\" class=\"jsx-3444813433 jsx-39827346 liteMode__button\">",
+        "target": [
+          ".liteMode__button"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+      }
+    ]
+  },
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "tags": [
+      "cat.color",
+      "wcag2aa",
+      "wcag143",
+      "ACT"
+    ],
+    "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+    "help": "Elements must have sufficient color contrast",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.5/color-contrast?application=axeAPI",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#b9b9b9",
+              "bgColor": "#ffffff",
+              "contrastRatio": 1.96,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<input type=\"tel\" id=\"id-phone\" name=\"phone\" required=\"\" tacc=\"input-input\" class=\"jsx-1882727075 input__input   \" value=\"\">",
+                "target": [
+                  "#id-phone"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 1.96 (foreground color: #b9b9b9, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p tacc=\"input-placeholder\" class=\"jsx-1882727075 input__label\">Ej: 1126533009 (sin 0 y sin 15)<span class=\"jsx-1882727075 input__asterisco\">*</span></p>",
+        "target": [
+          ".input__label"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.96 (foreground color: #b9b9b9, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#989898",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.88,
+              "fontSize": "9.0pt (12px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div tacc=\"banner-form\" class=\"jsx-3416500973 banner-form\">",
+                "target": [
+                  ".banner-form"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.88 (foreground color: #989898, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<small tacc=\"input-helpMessage\" class=\"jsx-1882727075 input-wrapper__help\">Los campos con asterisco (*) son obligatorios.</small>",
+        "target": [
+          ".input-wrapper__help"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.88 (foreground color: #989898, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#0097a9",
+              "bgColor": "#ffffff",
+              "contrastRatio": 3.5,
+              "fontSize": "12.0pt (16px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<section tacc=\"faq\" class=\"jsx-1683552706 faq\">",
+                "target": [
+                  ".faq"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.5 (foreground color: #0097a9, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<a title=\"Más info\" target=\"\" tacc=\"linksGeneric-link\" data-text=\"\" class=\"jsx-3777907206 faq__cta --Red-600 \" href=\"https://www.claro.com.ar/personas/lugares-medios-pago\">Más info</a>",
+        "target": [
+          ".faq__cta"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.5 (foreground color: #0097a9, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  },
+  {
+    "id": "listitem",
+    "impact": "serious",
+    "tags": [
+      "cat.structure",
+      "wcag2a",
+      "wcag131"
+    ],
+    "description": "Ensures <li> elements are used semantically",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.5/listitem?application=axeAPI",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "listitem",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "List item does not have a <ul>, <ol> parent element"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<li class=\"jsx-1161157395 accessItem__item\">",
+        "target": [
+          ".accessItem__item.jsx-1161157395:nth-child(1)"
+        ],
+        "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+      },
+      {
+        "any": [
+          {
+            "id": "listitem",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "List item does not have a <ul>, <ol> parent element"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<li class=\"jsx-1161157395 accessItem__item\">",
+        "target": [
+          ".accessItem__item.jsx-1161157395:nth-child(2)"
+        ],
+        "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+      },
+      {
+        "any": [
+          {
+            "id": "listitem",
+            "data": null,
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "List item does not have a <ul>, <ol> parent element"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<li class=\"jsx-1161157395 accessItem__item\">",
+        "target": [
+          ".accessItem__item.jsx-1161157395:nth-child(3)"
+        ],
+        "failureSummary": "Fix any of the following:\n  List item does not have a <ul>, <ol> parent element"
+      }
+    ]
+  }
+]
