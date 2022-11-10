@@ -1,7 +1,5 @@
 /// <reference types="cypress" />
 
-//https://www.youtube.com/watch?v=gRHwcIVDr8U
-
 function basicReport(violations) {
   cy.task(
     "log",
